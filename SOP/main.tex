@@ -9,6 +9,7 @@
 % \usepackage[showframe,headsep=2cm,headheight=2cm]{geometry}
 
 \usepackage{fancyhdr}
+\usepackage{lastpage}
 \usepackage{authblk}
 \usepackage{tabularx,ragged2e}
 \newcolumntype{C}{>{\Centering\arraybackslash}X} % centered "X" column
@@ -84,9 +85,9 @@
 % \usepackage{datetime}
 
 \fancyhf{}
-% \fancyhead[L]{\hfill {\small\sc Chacha Chen} \hfill}
+% \fancyhead[L]{\hfill {\small\sc Yizhou Harry Tian} \hfill}
 \fancyfoot[L]{\footnotesize{Yizhou Harry Tian}}
-\fancyfoot[R]{\footnotesize\today, page \thepage}
+\fancyfoot[R]{\footnotesize \thepage / \pageref{LastPage}}
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0.0pt} 
 % \newtheorem{problem}{Problem}
@@ -94,7 +95,7 @@
 \fancypagestyle{headstyle}{%
 \fancyhead{Special Header}\fancyfoot{}
 \fancyfoot[L]{\footnotesize\today}
-\fancyfoot[LE,RO]{\footnotesize\thepage}
+\fancyfoot[LE,RO]{\footnotesize\thepage / \pageref{LastPage}}
 }%
 
 \setlength{\arrayrulewidth}{0.2mm}
@@ -110,46 +111,51 @@
 
 
 
-
-
 \title{Ph.D. Statement of Purpose}
 \author{Yizhou Tian}
 \affil{University of Chicago}
 
 
+
+
+
 \begin{document}
-% \noindent \todo{
-% ◦ Why is this problem interesting?\\
-% ◦ What were the computational challenges?\\
-% ◦ What is your research contribution? What did you uniquely
-% contribute to the project?\\
-% ◦ What you personally gained from each project? Was it new
-% skills? New interests?\\
-% ◦ What are you excited about researching at Berkeley?\\}
+
+
+
+\input{prompt.tex}
 
 
 
 \begin{center}
     {\Large{\textbf{Ph.D. Statement of Purpose }}}\\
-    Yizhou Harry Tian\\
-     University of Chicago\\
+    % Yizhou Harry Tian\\
+    %  University of Chicago\\
 %     \href{mailto:tianh@uchicago.edu}{tianh@uchicago.edu}\\
     % \href{https://harry-tian.github.io/}{https://harry-tian.github.io/} \\
 \end{center}
 
-\input{statement}
 
-\input{interest}
 
-\input{experience}
+
+\input{introduction}
+
+
+
+\input{general-interest}
+
+
+
+\input{specific-interest}
+
+
 
 \input{school-fit}
 
-\clearpage
 
-% \clearpage
 
-% \bibliographystyle{unsrt}
-% \bibliography{ref}
+
+
+
 
 \end{document}

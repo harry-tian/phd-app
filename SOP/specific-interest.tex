@@ -1,0 +1,49 @@
+%!TEX root = main.tex
+
+\section{specific interest}
+
+
+%---------------------------------------------------------------
+%	general interest
+%---------------------------------------------------------------
+At the Pre-Doctoral Masters program at University of Chicago, I worked with Dr. Chenhao Tan on designing AI-driven decision support and training systems for medical teaching. I have learned many research skills and developed my interests in solving these specific problems:
+(i) generating AI assistance that inspires appropriate trust and reliance on the AI, 
+(ii) how and when we can achieve human-AI complementary performance, and 
+(iii) using AI to learn and model human perception and intuition.
+
+
+
+\subsection{project description}
+Motivated by AI learning human intuition, we devised a human-compatible model that learned both a classification task and predicting human perception. We realized that such a human-compatible representation learned some form of human similarity function and could be leveraged for case-based decision support: providing assistance as the test case's nearest-neighbor in the training set using our learned similarity function.
+I was responsible for conducting experiments on a synthetic datasets and a human study on a chest X-ray dataset with Prolific crowdworkers. The results showed our human-compatible representation leads to better decision support performance than an AI that onnly learns classification.  
+This research project inspired my interest in the following problems: 
+
+
+
+% \subsection{challenges}
+% While using AI to learn human perception was not new, our work was the first to combine learning human perception with classification and use the learned representation to assist human decision-making. Thus, there were many unprecedented problems during our work. On the data side, we had to decide on the format of human perception data, inter-annotator agreement, the amount of data, etc; on the model side, we had to decide on our model architecture, which layer's embedding to use, the dimension of the embedding, etc. Besides numerous experimental trials, what helped in forming our decisions were synthetic experiments. We build a synthetic dataset of fictional, digitally-generated insects with controllable features and also build synthetic human agents by tuning weights on the features; this allowed to exhaustively explore our design, hyperparameters, and the limitations of our model.
+
+% \subsection{unique contributions}
+% Working with another Ph.D student, my unique contributions include running synthetic experiments and conducting a human study on a medical dataset. For the synthetic experiment, we build a synthetic dataset of fictional, digitally-generated insects with 2 relevant features and 2 distractor features. By tuning the weights on these 4 features, we build different synthetic human agents. We also generated several datasets with different decision boundaries. Synthetic experiments allowed us to experiment with different hyperparameters, datasets and designs. For the human study, we wrote a survey webapp using Django and deployed it on Prolific. (more description)
+
+% \subsection{new skills}
+% From this project I gained technical skills. Besides designing and experimenting AI models, including using pytorch and running experiments with Wandb, I also learned of the complications in conducting human studies and interacting with crowdworkers. For example, instructions should be clear and intuitive. We also needed ways to collect high quality data, so we designed our own attention-checks. I also learned to better visualize and interpret results. (more description)
+
+% More importantly, I also learned of soft skills and different perspective of approaching research. Our work of learning human perception for decision support was a unique one and there was no previous work to build on. Thus we went through many peripherally related papers. Through the process I developed lit review skills: the ability to skim through an academic paper and quickly determine its relevance to our research. I also learned to really broaden my scope in lit review and research as work is very interdisciplinary: human perception and decision support are involved in different subfields of psychology, while our framework is applied to the medical field. 
+
+% Our problem proposal of designing decision-support and training systems is also quite broad and unspecific. Many of our meetings were brainstorming sessions where we would pitch ideas and if one sounded reasonable, we would run simulation experiments on it. This was how we pivoted to learning human perception and joint learning. In short, I learned to not be afraid to throw in ideas and try them out; this sounds trivial but it not easy for me as I have a heavy internal filter and often question myself.
+
+
+
+\subsection{new interests}
+
+\textbf{(i) generating AI assistance that inspires appropriate trust and reliance on the AI} An important distinction of our work is that we focus on decision support over mere AI model explanation. Many past works on human-AI team provide AI's decision and some form of explanation as assistance and claim improved team performance, but in most case a great part of the improved performance can be attributed to humans following AI's suggestion. This suggests overreliance on the AI and a lack of human agency, as evident by humans' inability to differentiate AI's errors. Our decision support framework instead aims to provide neutral support that retains as much human agency as possible: we provide example explanations from each class and do not reveal AI's predicted label. However, our work also shows providing neutral support leads to lower performance than providing evidence for model prediction. I believe human-AI teams are inherently human-centered and such neutral supports are desired, but the tradeoff between human agency and task performance is still an significant open problem that I want to solve. \\
+
+% \textbf{(ii) how and when we can achieve human-AI complementary performance} Complementary performance refers to human-AI team performance outperforming human or AI alone. As mentioned, one factor that affects team performance is human agency and reliance on AI. I am also interested in other factors such as human's and AI expertise on the task. I want to explore the limits of human-AI team and when complementary performance is possible.\\
+
+\textbf{(ii) using AI to learn and model human perception and intuition} Our model learns to predict human perception, but in general neural networks learning human perception and intuition is a more difficult task than classification. Perception prediction accuracy is low (70-80\%) compared to classification but the exact reason for this is unknown: it could be due to inter-annotation disagreement, randomness in human perception, low-quality annotation, etc. Related work has also primarily focused on visual perception on images and other modalities are less explored. As our work showed, AI learning human perception can provide better decisions support performance; I believe this method has potential to provide more effective AI assistance.
+
+
+% The project's initial goal was to develop an AI-driven tutorial framework for radiology residents in prostate cancer diagnosis. We started from machine teaching literature and read about how to select teaching examples to teach humans. This requires modeling human students' representation and we learned about modeling human perception judgements in a high-dimensional space. Motivated by AI learning human intuition, we devised a human-compatible model (using a resnet backbone) that learned both a classification task and predicting human perception. By visualizing the representations on a butterfly-moth dataset, we found that our human-compatible embedding, with high classification accuracy and perception prediction accuracy, learned the class decision boundary but was shaped differently than an resnet embedding trained without human perception: crucially, our human-compatible exhibited inter-class information that was not contained in ground-truth labels but rather from human perception data.
+
+% Thus, our model was significant in that it learned human perception while performing well at classification. While this was far from a teaching framework, we realized that such a human-compatible representation learned some form of human similarity function and could be leveraged for decision support: providing assistance from the training data for humans to make decisions. So we steered away from our initial goal and explored using our human-compatible representation for case-based decision support: given a test case, we provide its nearest-neighbor in the training set using our learned similarity function. We conducted experiments on synthetic datasets as well as human studies on a medical dataset and showed our human-compatible representation leads to better decision support performance than a traditional AI representation. (citation)
