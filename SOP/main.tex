@@ -107,8 +107,21 @@
 
 % \providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
 
-\newcommand\todo[1]{\textcolor{blue}{TODO: #1}}
+%%%%%%%%%%%%%%%%%%%%%%% Comments %%%%%%%%%%%%%%%%%%%%%%%
+\newif\ifcomments
 
+% \commentstrue
+\commentsfalse
+
+\ifcomments
+\newcommand\sect[1]{\textcolor{blue}{section: #1\\}}
+\newcommand\subsect[1]{\textcolor{blue}{subsection: #1\\}}
+\newcommand\todo[1]{\textcolor{red}{TODO: #1}}
+\else
+\newcommand\sect[1]{}
+\newcommand\subsect[1]{}
+\newcommand\todo[1]{}
+\fi
 
 
 \title{Ph.D. Statement of Purpose}
@@ -142,11 +155,11 @@
 
 
 
-\input{general-interest}
+\input{interest}
 
 
 
-\input{specific-interest}
+\input{experience.tex}
 
 
 
