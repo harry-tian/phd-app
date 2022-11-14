@@ -1,13 +1,14 @@
 %!TEX root = main.tex
 
-\noindent \textbf{1. How can we design AI assistance that inspires humans' appropriate reliance?}
+\sect{development of research experience}
 
+In our project, we spent a large amount of time devising a decision support system that differed from existing literature providing model explanations: our goal was to provide faithful and neutral evidence for humans to make independent decisions. Thus we eventually devised a neutral decision support policy that did not reveal AI's predicted label and provided nearest-neighbor explanations from all classes. 
+We showed such a policy provided effective decision support, but it was less effective than a persuasive decision support policy closer to model explanations. 
+
+This alludes to a larger problem: the tradeoff between human agency and human-AI team performance. 
 Many human-AI teams provide humans with "persuasive" AI assistance that improves humans performance but at the expense of humans' overreliance and blind trust towards AI [\citenum{bansal2021}]. This is undesired and unethical, especially in high-stake domains where humans should have the last say.
-On the other hand, many work including ours also show that neutral, non-persuasive assistance that dissuade humans from blindly following AI perform no better than persuasive assistance. Thus, I am interested in solving this dilemma.
-
-\sect{research exp}
-I worked with Prof. Chenhao Tan at UChicago to design a human-compatible model for case-based decision support.[\citenum{human-compat}]. Our model learns both classification and predicting human perception; we conducted synthetic experiments and human studies on natural image and medical dataset, showing our human-compatible representation leads to better decision support performance than traditional AI representations.
-
+On the other hand, many work [\citenum{bansal2021}], including ours, also show that neutral, non-persuasive assistance that dissuade humans from blindly following AI perform no better than persuasive assistance. 
+Thus, I am interested in solving this dilemma.
 
 
 % \subsect{class that motivated me}
