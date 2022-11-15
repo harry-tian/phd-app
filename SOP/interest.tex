@@ -2,17 +2,44 @@
 
 \sect{development of research experience}
 
-In our project, we spent a large amount of time devising a decision support system that differed from existing literature providing model explanations: our goal was to provide faithful and neutral evidence for humans to make independent decisions. Thus we eventually devised a neutral decision support policy that did not reveal AI's predicted label and provided nearest-neighbor explanations from all classes. 
-We showed such a policy provided effective decision support, but it was less effective than a persuasive decision support policy closer to model explanations. 
+In this project, we encountered the tradeoff between human agency and performance: showing neutral and informative explanations would retained human agency, but results in lower task performance than showing persuasive explanations that nudged humans to follow the AI. 
+I was intrigued by this dilemma and was drawn to the complexities of human-AI interaction. 
 
-This alludes to a larger problem: the tradeoff between human agency and human-AI team performance. 
-Many human-AI teams provide humans with "persuasive" AI assistance that improves humans performance but at the expense of humans' overreliance and blind trust towards AI [\citenum{bansal2021}]. This is undesired and unethical, especially in high-stake domains where humans should have the last say.
-On the other hand, many work [\citenum{bansal2021}], including ours, also show that neutral, non-persuasive assistance that dissuade humans from blindly following AI perform no better than persuasive assistance. 
-Thus, I am interested in solving this dilemma.
+\subsect{old perspective}
+Coming from a machine learning and not HCI background, my perspectives towards research were also largely influenced by ML. Specifically, I treated humans as another ML model, (in our project synthetic humans were linear combinations of weights) and focused solely on improving human or team task performance. To generate our ideal assistance, we would tune hyperparameters in our model until we achieved best performance on our synthetic humans.
+
+\subsect{new perspective}
+However, I was gradually exposed to new perspectives towards HAI through a \href{https://github.com/ChicagoHAI/human-centered-machine-learning}{Human-Centered Machine Learning course} as well as a \href{https://datascience.uchicago.edu/events/human-ai-conference/}{Human+AI conference}, both at UChicago.
+I realized that the human side of HAI was equally, if not more, important as the AI side. 
+
+For instance, besides improving human performance on a specific form of explanations, I was exposed to problem like what types of explanations are useful to humans for what tasks? Explanations that ML researchers like, like feature importantce, may be completely useless to real humans.
+More important problems include misalignment between HAI research and real humans, including misalignment in the task and objective, in diserideta of the assistance, in the subjects that use our assistance. 
+
+I was used to pursuing an empirical objective like a benchmark, but disregarding the big picture elments of HAI like human and stakeholder needs, how (and should) human use AI, etc. These questions are immensly difficult and open-ended but are also what exictes me about this line of research.
 
 
-% \subsect{class that motivated me}
+%  For example, the explanations and assistance we ML researchers are designing may not be what real humans, including workers, stalkholders, need. 
+
+% This alludes to a larger problem: the tradeoff between human agency and human-AI team performance. 
+% Many human-AI teams provide humans with "persuasive" AI assistance that improves humans performance but at the expense of humans' overreliance and blind trust towards AI [\citenum{bansal2021}]. This is undesired and unethical, especially in high-stake domains where humans should have the last say.
+% On the other hand, many work [\citenum{bansal2021}], including ours, also show that neutral, non-persuasive assistance that dissuade humans from blindly following AI perform no better than persuasive assistance. 
+% Thus, I am interested in solving this dilemma.
+
+
+
+
+
+
+
+
 % At UChicago, through Dr. Chenhao Tan's course in Human-Center Machine Learning I learned of the complexities of human-AI interaction. In high-stake domains like medical diagnosis, full automation of AI is often not desired and humans have to make the final decision. I am intrigued by the problems caused by this limitation, such as generating explanations that are informative and neutral instead of persuasive and deceiving, complementary performance etc. 
+
+
+
+% In our project, we spent a large amount of time devising a decision support system that differed from existing literature providing model explanations: our goal was to provide faithful and neutral evidence for humans to make independent decisions. Thus we eventually devised a neutral decision support policy that did not reveal AI's predicted label and provided nearest-neighbor explanations from all classes. 
+% We showed such a policy provided effective decision support, but it was less effective than a persuasive decision support policy closer to model explanations. 
+
+
 
 % \subsect{direct impact}
 % Also, I am motivated by the direct and visible impact in human-centered AI research. My research project [\citenum{human-compat}] has improved crowdworkers' performance on pneumonia diagnosis in chest X-rays, meaning it has the potential to be implemented in real-life medical settings. Such human-related experiments and improvements are very rewarding to me.
