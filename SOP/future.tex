@@ -1,35 +1,62 @@
 %!TEX root = main.tex
 
-My experiences collectively shaped my research interests in improving human-AI interaction and collaboration.
-Besides my interest, I am also very motivated in this direction of research because of its interdisciplinary nature and the visible impact that results from reearch.
+% My experiences collectively shaped my research interests in improving human-AI interaction and collaboration, 
+% incorporating interdisciplinary knowledge and.
+% I hope to continue this line of work in my PhD.
+% specific, I am curretly interested in the following problems:
+
+
+Thus, I am drawn towards HAI research because of the different perspectives and fields of knowledge it requires and its human-centered approach, differing drastically from ML. 
 I hope to continue this line of work in my PhD.
-Currently, I am interested in the following problems:
+Specifically, I am currently interested in the problem of the mismatch in HAI experiments on laypeople and practitioners.
 
+\subsect{research problem description}
+The gap between laypeople and experts is very large and often downplayed : explanations and AI assistance have different effects on people depending on their level of expertise. [\citenum{wang2021}] suggest explanations may be more effective on tasks that people perceive themsleves as more knowledable. [\citenum{tschandl2020}] report that in AI-assisted skin-cancer recognition, clinicians with different expertise show differences in accuracy, confidence, reliance on AI, calibration. 
+most HAI empirical work use crowdworkers due to it being cheaper and more accessible than real-world practitioners; often they usually list the potential gap between laypeople and experts and a limitation at the end of the paper. I find this extremely unsatisfying and want to bridge this gap. I see two general directions towards this end:
 
-\noindent \textbf{\\1. How can we design AI assistance that inspires humans' appropriate reliance?}
+\subsect{research goal}
+\noindent \textbf{1) Closing the gap.}
+One straightforward solution is to try to reduce the gap between laypeple and real-world practitioners in the experiment setting. 
+There are many approaches to this, one of which I am currently working on is improving laypeoples' task expertise through machine teaching.
+\subsect{work in progress}
 
+Other approaches may include simulating the task environment in terms of risk, cognitive engagement, etc.
 
-In our project, we spent a large amount of time devising a decision support system that differed from existing literature providing model explanations: our goal was to provide faithful and neutral evidence for humans to make independent decisions. Thus we eventually devised a neutral decision support policy that did not reveal AI's predicted label and provided nearest-neighbor explanations from all classes. 
-We showed such a policy provided effective decision support, but it was less effective than a persuasive decision support policy closer to model explanations. 
-
-This alludes to a larger problem: the tradeoff between human agency and human-AI team performance. 
-Many human-AI teams provide humans with "persuasive" AI assistance that improves humans performance but at the expense of humans' overreliance and blind trust towards AI [\citenum{bansal2021}]. This is undesired and unethical, especially in high-stake domains where humans should have the last say.
-On the other hand, many work [\citenum{bansal2021}], including ours, also show that neutral, non-persuasive assistance that dissuade humans from blindly following AI perform no better than persuasive assistance. 
-Thus, I am interested in solving this dilemma.
-
-
-
-\noindent \textbf{\\2. AI learning human perception to provide better AI assistance}
-
-
-% Our model learns to predict human perception, but in general neural networks learning human perception and intuition is a more difficult task than classification. Perception prediction accuracy is low (70-80\%) compared to classification but the exact reason for this is unknown: it could be due to inter-annotation disagreement, randomness in human perception, low-quality annotation, etc. Related work has also primarily focused on visual perception on images and other modalities are less explored. 
-As our work showed, AI learning human perception can provide better decisions support performance; I believe in general, incorporating more human knowledge and intution to AI frameworks has potential to provide more effective AI assistance, but many issues remain unsolved in this nascent direction. 
-For example, our work focuses on visual perception on images as it is the easiest form of perception for humans; perception for other modalities like audio and text are also important but much more difficult to collect and utilize. The limitations and bounds of AI learning human perception is also unexplored, including the amount of data needed, the format of data (we used triplet annotations), how well neural networks can learn, etc.
-
+\noindent \textbf{2) Making sense of the gap}
+1) a framework that explains, if an experiment shows phenomenon X on crowdworkers, this means X' is likely on experts...
+2) (potentially using the aforementioned framework) designing assistance/explanations that cater to different levels of expertise: laypeople, novice, different xp experts, etc.
+disaggregrated assistance systems for different levels of expertise
+one-liners summary: 
+a framework that makes more sense of crowdworker experiments. given some human-algorithm collaboration experiment results on crowdworkers, what can we imply about such algorithms on practitioners?
 
 
 
-% \textbf{(ii) how and when we can achieve human-AI complementary performance} Complementary performance refers to human-AI team performance outperforming human or AI alone. As mentioned, one factor that affects team performance is human agency and reliance on AI. I am also interested in other factors such as human's and AI expertise on the task. I want to explore the limits of human-AI team and when complementary performance is possible.\\
+
+
+% \noindent \textbf{\\1. How can we design AI assistance that inspires humans' appropriate reliance?}
+
+
+% In our project, we spent a large amount of time devising a decision support system that differed from existing literature providing model explanations: our goal was to provide faithful and neutral evidence for humans to make independent decisions. Thus we eventually devised a neutral decision support policy that did not reveal AI's predicted label and provided nearest-neighbor explanations from all classes. 
+% We showed such a policy provided effective decision support, but it was less effective than a persuasive decision support policy closer to model explanations. 
+
+% This alludes to a larger problem: the tradeoff between human agency and human-AI team performance. 
+% Many human-AI teams provide humans with "persuasive" AI assistance that improves humans performance but at the expense of humans' overreliance and blind trust towards AI [\citenum{bansal2021}]. This is undesired and unethical, especially in high-stake domains where humans should have the last say.
+% On the other hand, many work [\citenum{bansal2021}], including ours, also show that neutral, non-persuasive assistance that dissuade humans from blindly following AI perform no better than persuasive assistance. 
+% Thus, I am interested in solving this dilemma.
+
+
+
+% \noindent \textbf{\\2. AI learning human perception to provide better AI assistance}
+
+
+% % Our model learns to predict human perception, but in general neural networks learning human perception and intuition is a more difficult task than classification. Perception prediction accuracy is low (70-80\%) compared to classification but the exact reason for this is unknown: it could be due to inter-annotation disagreement, randomness in human perception, low-quality annotation, etc. Related work has also primarily focused on visual perception on images and other modalities are less explored. 
+% As our work showed, AI learning human perception can provide better decisions support performance; I believe in general, incorporating more human knowledge and intution to AI frameworks has potential to provide more effective AI assistance, but many issues remain unsolved in this nascent direction. 
+% For example, our work focuses on visual perception on images as it is the easiest form of perception for humans; perception for other modalities like audio and text are also important but much more difficult to collect and utilize. The limitations and bounds of AI learning human perception is also unexplored, including the amount of data needed, the format of data (we used triplet annotations), how well neural networks can learn, etc.
+
+
+
+
+% % \textbf{(ii) how and when we can achieve human-AI complementary performance} Complementary performance refers to human-AI team performance outperforming human or AI alone. As mentioned, one factor that affects team performance is human agency and reliance on AI. I am also interested in other factors such as human's and AI expertise on the task. I want to explore the limits of human-AI team and when complementary performance is possible.\\
 
 
 
