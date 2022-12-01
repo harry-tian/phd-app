@@ -60,14 +60,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[table]{xcolor}
 
-% MDW: TESTING
-\oddsidemargin 0.0in
-\evensidemargin\oddsidemargin
-\setlength{\textwidth}{6.7in}
-\setlength{\textheight}{9.0in}
-\setlength{\topmargin}{0.0in}
-\setlength{\headheight}{0.0in}
-\setlength{\headsep}{0.0in}
+\usepackage[margin=1in]{geometry}
+
 
 % Remove some of the space around figure captions
 \setlength\abovecaptionskip{0.1in}
@@ -83,7 +77,6 @@
 \usepackage{lipsum}
 % \usepackage{fancyhdr}
 % \usepackage{datetime}
-
 \fancyhf{}
 % \fancyhead[L]{\hfill {\small\sc Yizhou Harry Tian} \hfill}
 \fancyfoot[L]{\footnotesize{Yizhou Harry Tian}}
@@ -144,16 +137,19 @@
 
 
 
-\begin{center}
-    {\Large{\textbf{Ph.D. Statement of Purpose }}}\\
+% \begin{center}
+%     {\Large{\textbf{Ph.D. Statement of Purpose }}}\\
     % Yizhou Harry Tian\\
     %  University of Chicago\\
 %     \href{mailto:tianh@uchicago.edu}{tianh@uchicago.edu}\\
     % \href{https://harry-tian.github.io/}{https://harry-tian.github.io/} \\
-\end{center}
+% \end{center}
+
+\input{header}
 
 
 
+\doublespacing
 
 \input{introduction}
 
@@ -176,6 +172,7 @@
 
 
 \clearpage
+\singlespacing
 \bibliographystyle{unsrt}
 \bibliography{ref}
 
