@@ -1,4 +1,5 @@
 %!TEX root = main.tex
+\subsection*{Future Directions}
 
 % My experiences collectively shaped my research interests in improving human-AI interaction and collaboration, 
 % incorporating interdisciplinary knowledge and.
@@ -7,30 +8,18 @@
 
 \sect{a research problem I am interested in}
 
-Thus, I am drawn towards HAI research because of the different perspectives and fields of knowledge it requires and its human-centered approach, differing drastically from ML. 
-% I hope to continue this line of work in my PhD.
-\subsect{research problem description}
-Specifically, I am currently interested in the problem of the gap between laypeople and real-world practitioners in HAI experiments.
-% The gap in experiment results on laypeople and practitioners is a large one that is often downplayed: 
-Crucially, AI assistance affects people differently depending on their task expertise. [\citenum{wang2021}] suggest explanations may be more effective on tasks that people perceive themselves as more knowledable. [\citenum{tschandl2020}] report that in AI-assisted skin-cancer recognition, clinicians with different expertise show differences in not only diagnosis accuracy but also reliance on AI. 
-Most HAI empirical work use crowdworkers due to its their lower cost and higher accessibiilty compared to real-world practitioners; 
-often they list the potential gap between laypeople and practitioners as a limitation at the end of the paper, but do not expand further. 
-I find this extremely unsatisfying and I envision two directions towards this issue:
-
-\subsect{research goal}
-\noindent \textbf{1) Bridging the gap.}
-One straightforward solution is to reduce the gap between laypeple and real-world practitioners in HAI experimental setting. 
-There are many approaches to this, one of which I am currently working on is improving laypeoples' task expertise through machine teaching. 
-Such teaching frameworks can be deployed as short, effective training phases before an HAI experiment procedure. 
-We are currently investigating whether grouping teaching examples in pairs or tuples can improve teaching by inducing contrastive learning.
-Another way to bridge the gap is to simulate practitioners' real-world task environment in terms of risk, cognitive engagement, user-interface, etc.
+I am drawn toward HAI research because of its interdisciplinary nature and human-centered approach. Specifically, I am currently interested in the following directions:
+\noindent \textbf{\\1. The gap between laypeople and real-world practitioners in HAI experiments.}
+AI assistance affects people differently depending on their task expertise. [\citenum{wang2021}] suggest explanations may be more effective on tasks that people perceive themselves as more knowledgeable about. [\citenum{tschandl2020}] report that in AI-assisted skin-cancer recognition, clinicians with different expertise show differences in not only diagnosis accuracy but also reliance on AI. Most HAI empirical studies use crowdworkers due to their lower cost and higher accessibility compared to real-world practitioners; often they list the potential gap between laypeople and practitioners as a limitation at the end of the paper but do not expand further. I find this extremely unsatisfying and I envision two directions toward this issue. The first is to bridge the gap by bringing laypeoples' experiment environment closer to the actual task's. This could be done by improving their task knowledge through short training sessions, one direction I am currently working on, or by simulating other factors like risk, cognitive engagement, or the user interface. Another direction is to make more sense of the gap. For example, can we design a framework that infers meaningful information on how practitioners would behave (reliance towards AI, what type of explanations are useful) from experiment results on laypeople? An extension to this may be to design different forms of AI assistance for different levels of user expertise; this is motivated by AI's varying effects on people with different expertise [\citenum{wang2021},\citenum{tschandl2020}] and is similar in spirit to disaggregated evaluations [\citenum{barocas2021}].
+\noindent \textbf{\\2. Machine teaching and modeling human learners.} Conventional human learning may be slow and inefficient, so we can leverage AI models' impressive learning capabilities and performance. But the problem of AI teaching knowledge to human learners is broad and difficult. For one, I think an effective human learner model is lacking: ML literature often infers learners' parameters through indirect, simplistic methods like linear separators while psychological models often assume ground-truth feature weights are given [\citenum{nosofsky1986attention}]. In my past and current work, we are working on modeling human representation space from perceptual judgment annotations, an effective yet costly method. Another problem is the human learning process: while there are decades of psychological research on how humans learn, there is limited work on leveraging those findings for AI teachers. If we can more accurately simulate human learning with AI models, AI teachers can provide better teaching. For example, in my current project on designing AI-driven tutorials for radiology training, we are currently investigating whether teaching with contrastive examples can improve learning; if so, we can simulate human learning with contrastive loss functions. Our end goal is to provide more efficient and effective training for radiology residents in prostate cancer diagnosis.
 
 
-\noindent \textbf{2) Making sense of the gap.}
-Another direction is to design a framework that infers meaningful information from experiments of laypeople. 
-For example, ideally such a framework could infer patterns on practitioners from experiment results on laypeople.
-An extension to this may be to design different forms of AI assistance for different levels of user expertise. 
-This is motivated by evidence suggesting AI has varying effects on people with different expertise [\citenum{wang2021},\citenum{tschandl2020}] and similar in spirit to disaggregrated evaluations [\citenum{barocas2021}].
+
+
+
+
+
+
 
 
 
