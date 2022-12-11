@@ -1,17 +1,23 @@
 %!TEX root = main.tex
 \subsection*{Finding My Research Interest in HAI via AI Decision Support}
 
+\sect{undergrad}
 
-\sect{A research project I did}
+My interest in HAI stems from my undergraduate research experiences in machine learning (ML). At an REU program (Research Experiences for Undergraduates) at the University of North Texas, I learned basic ML knowledge and the experience-focused nature of ML. The following year, I attended an REU at the University of Minnesota. Working with Prof. Zhiwei Steven Wu in Differential Privacy (DP), I experimented with hyperparamter optimization methods and found random search to outperform bayesian optimization. I presented my work at a National REU Poster Symposium. 
 
 
 
 
-My research journey began with my work with Prof. Chenhao Tan at UChicago, where we designed a human-compatible model for case-based decision support 
+
+\sect{uchicago}
+
+
+Then, I learned about the human side of ML at the predoctoral program at UChicago, working with Prof. Chenhao Tan at the CHAI (Chicago Human-AI) lab. In our first project, we designed a human-compatible model for case-based decision-support
 [\citenum{human-compat}]. 
-\subsect{research problem description}
-In explainable AI (XAI), example-based explanations retrieve the nearest neighbors to a test instance, but the similarity metric for retrieval remains understudied. In fact, the metric is often based on some AI model embedding or ground-truth features, so the retrieved examples may not be informative to humans. Towards this end, we developed a human-compatible model that learns both image classification and human visual similarity judgment. 
-Such a model produced representations more aligned with human perception, thus providing more effective nearest-neighbor explanations as case-based decision-support.
+\subsect{research problem summary}
+In explainable AI (XAI), example-based explanations retrieve the nearest neighbors to a test instance, but the similarity metric for retrieval is often based on some AI model embedding or ground-truth features, so the retrieved examples may not be informative to humans. 
+\subsect{research project summary}
+Towards this end, we developed a human-compatible model that learns both image classification and human visual similarity judgment. Such a model produced representations more aligned with human perception, thus providing more effective nearest-neighbor explanations as case-based decision-support.
 
 
 
@@ -20,8 +26,15 @@ To test the potential of our model, I conducted synthetic experiments by buildin
 \subsect{research outcomes}
 The work led to a publication to the Workshop on Human-Machine Collaboration and Teaming in ICML 2022 [\citenum{human-compat}] as well as an under-review submission to a major ML conference.
 
-\subsect{new skills I learned}
-From this work, I experienced the complexities of an entire research project lifecycle and learned many valuable lessons. I learned to be flexible in problem formulation and breaking a large problem into multiple concrete, well-scaled steps. In fact, our initial goal was to design an AI-driven tutorial for radiology training. But this goal was too broad at first, so we decided to first show our method's effectiveness for example-based local explanations, serving as the foundation for the larger problem of radiology training. Another important lesson I learned was that in empirical research should be comprehensive and significant. For our synthetic experiment, I learned to devise numerous ablation studies on variables like feature weights on agents, decision boundaries, dataset size, injected noise. However, mere comprehensiveness was not enough, as the results were unconvincing due to our tasks' lack of complexity and significance: one was an artificial task and the other was classification on butterflies and moths. So I supplemented our experiments with a medical dataset that was larger and resembled real-life medical diagnoses. Positive results on such a more difficult and high-stake task showed much more potential and significance for our method.
+
+% \subsect{new skills I learned}
+% From this work, I experienced the complexities of an entire research project lifecycle and learned many valuable lessons. I learned to be flexible in problem formulation and breaking a large problem into multiple concrete, well-scaled steps. In fact, our initial goal was to design an AI-driven tutorial for radiology training. But this goal was too broad at first, so we decided to first show our method's effectiveness for example-based local explanations, serving as the foundation for the larger problem of radiology training. Another important lesson I learned was that in empirical research should be comprehensive and significant. For our synthetic experiment, I learned to devise numerous ablation studies on variables like feature weights on agents, decision boundaries, dataset size, injected noise. However, mere comprehensiveness was not enough, as the results were unconvincing due to our tasks' lack of complexity and significance: one was an artificial task and the other was classification on butterflies and moths. So I supplemented our experiments with a medical dataset that was larger and resembled real-life medical diagnoses. Positive results on such a more difficult and high-stake task showed much more potential and significance for our method.
+
+
+
+
+
+
 
 
 % Besides technical skills in experiment design, I learned of an unexpected but useful research practice: being flexible in problem formulation and the research process. 

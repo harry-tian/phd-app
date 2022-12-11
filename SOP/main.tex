@@ -77,11 +77,22 @@
 \usepackage{lipsum}
 % \usepackage{fancyhdr}
 % \usepackage{datetime}
+
 \fancyhf{}
-% \fancyhead[L]{\hfill {\small\sc Yizhou Harry Tian} \hfill}
-\fancyfoot[L]{\footnotesize{Yizhou Harry Tian}}
-\fancyfoot[R]{\footnotesize \thepage / \pageref{LastPage}}
+\fancyhead[C]{
+    \small 
+    {Yizhou Harry Tian} 
+    \hspace*{8mm}
+    \href{mailto:tianh@uchicago.edu}{tianh@uchicago.edu} 
+    \hspace*{8mm}
+    \href{https://harry-tian.github.io/}{https://harry-tian.github.io/} 
+    \noindent\rule{16.5cm}{0.2pt}
+    }
+\fancyfoot[C]{\footnotesize \thepage / \pageref{LastPage}}
 \pagestyle{fancy}
+
+
+
 \renewcommand{\headrulewidth}{0.0pt} 
 % \newtheorem{problem}{Problem}
 
@@ -137,19 +148,13 @@
 
 
 
-% \begin{center}
-%     {\Large{\textbf{Ph.D. Statement of Purpose }}}\\
-    % Yizhou Harry Tian\\
-    %  University of Chicago\\
-%     \href{mailto:tianh@uchicago.edu}{tianh@uchicago.edu}\\
-    % \href{https://harry-tian.github.io/}{https://harry-tian.github.io/} \\
-% \end{center}
+
 
 \input{header}
 
 
 
-\doublespacing
+% \doublespacing
 
 \input{introduction}
 
